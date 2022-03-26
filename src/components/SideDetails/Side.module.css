@@ -1,0 +1,80 @@
+@import "../../root.css";
+.side_component {
+  max-width: 50%;
+}
+.side_details {
+  background: var(--primary);
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr) 11rem;
+  justify-items: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+.side_heading {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  text-align: center;
+}
+.side_scroll {
+  grid-column: 1/6;
+  grid-row: 2/5;
+  margin-right: 2rem;
+}
+.side_heading h4 {
+  margin-bottom: 0;
+  font-size: 3.2rem;
+  color: var(--seconday);
+}
+.side_heading p {
+  color: var(--ternary_2);
+}
+.side_heading p span {
+  color: var(--gold);
+}
+.side_scroll h5 {
+  margin: 0;
+  font-size: 1.2em;
+  color: var(--ternary_2);
+}
+.side_scroll h2 {
+  margin: 0;
+  font-size: 3.2em;
+  color: var(--ternary_1);
+}
+
+.side_scroll .scroll_dots .active {
+  color: var(--pure);
+}
+.side_scroll .cust_images {
+  border-radius: 50%;
+  width: 31%;
+  margin: auto 5rem;
+}
+@media (max-width: 55em) {
+  .side_component {
+    max-width: 100%;
+  }
+}
+@media (max-width: 31.25em) {
+  .side_component {
+    font-size: 70%;
+  }
+  .side_heading h4 {
+    font-size: 2.7;
+  }
+  .side_details {
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media (max-width: 23.25em) {
+  .side_component {
+    font-size: 65%;
+  }
+}
+@media (max-width: 21.25em) {
+  .side_details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
